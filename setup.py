@@ -7,6 +7,19 @@
 # MAGIC Depois, abra `challenge.py`.
 # MAGIC
 # MAGIC > Ambiente detectado automaticamente — sem configuração necessária.
+# MAGIC
+# MAGIC ---
+# MAGIC
+# MAGIC ## Como importar no Databricks Community Edition
+# MAGIC
+# MAGIC 1. Acesse [community.cloud.databricks.com](https://community.cloud.databricks.com)
+# MAGIC 2. No menu lateral: **Workspace → sua pasta pessoal**
+# MAGIC 3. Clique em **Import** (ícone de seta para baixo ou botão no canto superior direito)
+# MAGIC 4. Selecione **File** e faça upload de `setup.py`
+# MAGIC 5. O Databricks abre o notebook automaticamente — clique em **Run All**
+# MAGIC 6. Repita os passos 3–4 para `challenge.py`
+# MAGIC
+# MAGIC > **Atenção:** rode o `setup.py` antes de abrir o `challenge.py`.
 
 # COMMAND ----------
 
