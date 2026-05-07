@@ -1,4 +1,4 @@
-# 🔥 Spark Challenge — O Pipeline que Trava no TikTok
+# 🔥 Spark Challenge — O Pipeline da Shoppa
 
 > Nível: Mid → Senior | Tempo estimado: 2–4 horas | Stack: PySpark 3.x
 
@@ -10,7 +10,7 @@ Você acabou de entrar na equipe de dados da **Shoppa**, um marketplace brasilei
 
 O time de produto quer um **dashboard de sessões por categoria de produto** — quantas sessões por dia, qual o ticket médio, qual o funil de conversão (view → cart → purchase).
 
-O time anterior deixou um pipeline que "funciona", mas o job de Spark trava ou demora horas quando algum produto viraliza no TikTok. Seu trabalho é entender por que isso acontece e consertar.
+O time anterior deixou um pipeline que "funciona", mas o job de Spark trava ou demora horas quando algum produto viraliza na Shoppa. Seu trabalho é entender por que isso acontece e consertar.
 
 ---
 

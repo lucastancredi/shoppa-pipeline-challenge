@@ -5,7 +5,7 @@
 # MAGIC
 # MAGIC **Cenário:** Você entrou na equipe de dados da Shoppa, um marketplace com 8M de usuários.
 # MAGIC O time de produto quer um dashboard de sessões por categoria — mas o pipeline de Spark
-# MAGIC trava toda vez que algum produto viraliza no TikTok.
+# MAGIC trava toda vez que algum produto viraliza na Shoppa.
 # MAGIC
 # MAGIC **Seu trabalho:** entender por que isso acontece e consertar.
 # MAGIC
