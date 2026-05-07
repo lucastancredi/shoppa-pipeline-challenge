@@ -143,32 +143,26 @@ Para o teste:
 
 ## Como Entregar
 
-- Um repositório Git (público ou compartilhado) com:
-  ```
-  ├── src/
-  │   ├── task1_profile.py
-  │   ├── task2_naive_join.py
-  │   ├── task3_broadcast.py
-  │   ├── task4_salting.py
-  │   └── task5_output.py
-  ├── tests/
-  │   └── test_transformations.py
-  └── ANALYSIS.md   ← suas respostas às perguntas abertas
-  ```
+Um repositório Git (público ou compartilhado) com:
+
+```
+├── challenge.py        ← notebook com as tasks resolvidas
+├── tests/
+│   └── test_transformations.py
+└── ANALYSIS.md         ← suas respostas às perguntas abertas
+```
 
 ---
 
 ## Critério de Avaliação (transparente)
 
-
-| Critério                                                             | Peso |
-| -------------------------------------------------------------------- | ---- |
-| Identifica o skew corretamente (Task 1)                              | 20%  |
-| Diagnóstico articulado do problema (Task 2)                          | 20%  |
-| Implementação correta do broadcast join (Task 3)                     | 20%  |
-| Implementação correta do salting + explicação dos tradeoffs (Task 4) | 25%  |
-| Qualidade do teste unitário (Task 5)                                 | 15%  |
-
+| Critério                                                              | Peso |
+| --------------------------------------------------------------------- | ---- |
+| Perfilou os dados e antecipou o problema antes do join (Task 1)       | 20%  |
+| Diagnóstico articulado da causa raiz (Task 2)                         | 20%  |
+| Implementação correta do broadcast join (Task 3)                      | 20%  |
+| Implementação correta do salting + explicação dos tradeoffs (Task 4)  | 25%  |
+| Qualidade do teste unitário (Task 5)                                  | 15%  |
 
 > O código que funciona vale menos do que o código que funciona **e** explica por que funciona.
 
@@ -176,15 +170,16 @@ Para o teste:
 
 ## Setup
 
+```
+1. Importe setup.py no Databricks CE e execute — gera os dados automaticamente
+2. Importe challenge.py e resolva as tasks célula por célula
+```
+
+**Local (opcional):**
 ```bash
-# Gerar os dados de teste
-python seed_data.py
-
-# Rodar os scripts
-spark-submit src/task1_profile.py
-
-# Rodar os testes
-pytest tests/
+pip install pyspark numpy pandas
+python setup.py
+# edite e execute challenge.py no VS Code ou Jupyter
 ```
 
 **Requisitos:** Python 3.11+, PySpark 3.4+, pytest
