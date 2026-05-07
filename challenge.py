@@ -137,7 +137,7 @@ print("Datasets carregados. Pode começar.")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Task 5 — Output e Teste Unitário `[15 pts]`
+# MAGIC ## Task 5 — Output e Teste Unitário *(opcional — bonus +10%)*
 # MAGIC
 # MAGIC **Parte 1:** salve o resultado final como Delta table particionada por `data`
 # MAGIC (Parquet se não tiver Delta disponível).

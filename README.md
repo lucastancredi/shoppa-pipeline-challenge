@@ -125,7 +125,7 @@ Responda:
 
 ---
 
-### Task 5 — Output e Teste Unitário
+### Task 5 — Output e Teste Unitário *(opcional — bonus)*
 
 1. Salve o resultado final como **Delta table** (ou Parquet se não tiver Delta) particionado por `data`
 2. Escreva **1 teste unitário** para a função de transformação principal (a que calcula taxa de conversão)
@@ -136,8 +136,8 @@ Para o teste:
 - Valide o schema e pelo menos 1 valor calculado
 - Use `pytest` ou `unittest`
 
-> **Entregável:** Script de escrita + arquivo de teste.
-> **O que estamos avaliando:** Você escreve código testável? O teste testa comportamento, não implementação?
+> **Entregável:** código de escrita + arquivo de teste.
+> **Bonus:** quem chegar aqui mostra que sabe escrever código testável — separa transformação de execução e valida comportamento, não implementação.
 
 ---
 
@@ -158,11 +158,11 @@ Um repositório Git (público ou compartilhado) com:
 
 | Critério                                                              | Peso |
 | --------------------------------------------------------------------- | ---- |
-| Perfilou os dados e antecipou o problema antes do join (Task 1)       | 20%  |
-| Diagnóstico articulado da causa raiz (Task 2)                         | 20%  |
+| Perfilou os dados e antecipou o problema antes do join (Task 1)       | 25%  |
+| Diagnóstico articulado da causa raiz (Task 2)                         | 25%  |
 | Implementação correta do broadcast join (Task 3)                      | 20%  |
-| Implementação correta do salting + explicação dos tradeoffs (Task 4)  | 25%  |
-| Qualidade do teste unitário (Task 5)                                  | 15%  |
+| Implementação correta do salting + explicação dos tradeoffs (Task 4)  | 30%  |
+| Teste unitário (Task 5 — opcional)                                    | +10% |
 
 > O código que funciona vale menos do que o código que funciona **e** explica por que funciona.
 
