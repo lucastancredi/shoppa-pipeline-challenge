@@ -1,4 +1,4 @@
-# 🔥 Spark Challenge — Pipeline de Enriquecimento com Skew
+# 🔥 Spark Challenge — O Pipeline que Trava no TikTok
 
 > Nível: Mid → Senior | Tempo estimado: 2–4 horas | Stack: PySpark 3.x
 
