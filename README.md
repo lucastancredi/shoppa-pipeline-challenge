@@ -16,7 +16,7 @@ O time anterior deixou um pipeline que "funciona", mas o job de Spark trava ou d
 
 ## Dataset
 
-Dois datasets no diretório `data/`:
+Dois datasets gerados pelo `setup.py` (Delta tables no Databricks, Parquet local):
 
 ### `clickstream/` — Eventos de comportamento do usuário
 
@@ -44,7 +44,7 @@ Dois datasets no diretório `data/`:
 | `seller_id`    | string | ID do vendedor                      |
 
 
-**Volume:** ~5 milhões de eventos, 10.000 produtos.
+**Volume:** ~2 milhões de eventos, 10.000 produtos.
 
 ---
 
@@ -60,7 +60,7 @@ Carregue os dois datasets e responda:
 4. Plote (ou imprima) o top 10 produtos por volume de eventos.
 
 > **Entregável:** Script + prints dos resultados.
-> **O que estamos avaliando:** Você consegue identificar o skew antes de escrever qualquer join?
+> **O que estamos avaliando:** Você perfilou os dados e consegue antecipar problemas antes de escrever qualquer join?
 
 ---
 
@@ -82,8 +82,8 @@ Escreva o join mais simples possível entre `clickstream` e `products` para calc
 Depois de rodar, responda:
 
 1. Quanto tempo demorou?
-2. Abra o Spark UI (ou observe os logs). Qual stage está lento? Por quê?
-3. Como você confirmaria que é skew e não outra coisa?
+2. Use `.explain()` no DataFrame resultante. Qual operação está no caminho crítico? Por quê?
+3. Como você confirmaria que é a distribuição de dados o problema e não outra coisa?
 
 > **Entregável:** Script + análise escrita de 3–5 linhas explicando o diagnóstico.
 > **O que estamos avaliando:** Você sabe ler o Spark UI? Consegue articular a causa raiz?

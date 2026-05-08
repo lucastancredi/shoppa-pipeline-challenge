@@ -87,7 +87,7 @@ print("Datasets carregados. Pode começar.")
 # MAGIC
 # MAGIC **Entregável:** código + análise de 3–5 linhas no `ANALYSIS.md`:
 # MAGIC 1. Quanto tempo demorou?
-# MAGIC 2. Qual stage está lento? (abra o Spark UI)
+# MAGIC 2. Use .explain() no resultado. Qual operação está no caminho crítico?
 # MAGIC 3. Como você confirmaria que é o join o culpado e não outra coisa?
 
 # COMMAND ----------
