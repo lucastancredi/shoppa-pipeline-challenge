@@ -29,7 +29,7 @@ import pandas as pd
 from pyspark.sql import SparkSession
 
 _ON_DATABRICKS = "DATABRICKS_RUNTIME_VERSION" in os.environ
-N_EVENTS       = 2_000_000 if _ON_DATABRICKS else 500_000
+N_EVENTS       = 5_000_000 if _ON_DATABRICKS else 500_000
 TABLE_CLICKS   = "shoppa_clicks"
 TABLE_PRODUCTS = "shoppa_products"
 LOCAL_DIR      = "data"

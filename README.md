@@ -44,7 +44,7 @@ Dois datasets gerados pelo `setup.py` (Delta tables no Databricks, Parquet local
 | `seller_id`    | string | ID do vendedor                      |
 
 
-**Volume:** ~2 milhões de eventos, 10.000 produtos.
+**Volume:** ~5 milhões de eventos, 10.000 produtos.
 
 ---
 
